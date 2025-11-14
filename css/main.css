@@ -157,7 +157,8 @@ header {
   gap: 30pt;
 }
 
-#header-companies-list > button {
+#header-companies-list > a {
+  display: block;
   width: 5cm;
   height: 1.5cm;
   /* background-color: black; */
@@ -166,9 +167,11 @@ header {
   border-width: 2px;
   border-color: var(--dark-grey);
   border-radius: 10px;
+  align-content: center;
+  text-align: center;
 }
 
-#header-companies-list > button > img {
+#header-companies-list > a > img {
   height: 60%;
   opacity: 30%;
 }
@@ -254,6 +257,9 @@ main > section > p {
   border-radius: 5px;
   color: white;
   box-shadow: 3pt, 3pt, 3pt, 3pt, blue;
+  align-content: center;
+  text-align: center;
+  text-decoration: none;
 }
 
 #projects-section-area {
@@ -336,13 +342,26 @@ main > section > p {
   color: inherit;
 }
 
+.projects-section-area-slim-content-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10pt;
+}
+
 .single-color-button {
-  width: 5cm;
+  display: block;
+  /* width: 5cm; */
+  padding-left: 10pt;
+  padding-right: 10pt;
   height: 1.2cm;
   /* background-color: black; */
   border-style: hidden;
   border-radius: 5pt;
   color: white;
+  align-content: center;
+  text-align: center;
+  text-decoration: none;
 }
 
 .single-color-button.orange {
