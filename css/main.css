@@ -120,7 +120,8 @@ header {
   margin: 0;
 }
 
-#header-presentation-content > button {
+#header-presentation-content > .two-colors-button {
+  /* display: block; */
   width: 50%;
   height: 60pt;
   background-color: var(--dark-green);
