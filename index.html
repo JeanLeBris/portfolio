@@ -4,22 +4,38 @@
         <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
         <link href="./css/main.css" rel="stylesheet" />
+        <script type="text/javascript" src="javascript/interactions.js"></script>
         <title>Portfolio</title>
     </head>
     <body>
         <header>
             <div id="header-content">
-                <div id="header-bar">
-                    <div id="header-section-links">
+                <div id="header-bar-desktop">
+                    <div id="header-section-desktop-links">
                         <a href="">Home</a>
                         <a href="#work-section">Recent work</a>
                         <a href="#projects-section">Projects</a>
                         <a href="#contact-section">Get in touch</a>
                     </div>
-                    <div id="header-contact-links">
+                    <div id="header-contact-desktop-links">
                         <a href="mailto:jean.le.bris.etudes@gmail.com"><img src="images/mail_logo.png"></a>
                         <a href="https://github.com/JeanLeBris" target="_blank"><img src="images/github_logo_2.png"></a>
                         <a href="https://www.linkedin.com/in/jean-le-bris" target="_blank"><img src="images/linkedin_logo.png"></a>
+                    </div>
+                </div>
+                <div id="header-bar-mobile">
+                    <div id="header-section-mobile-base">
+                        <a href="">Jean LE BRIS</a>
+                        <div id="header-section-mobile-base-button" onclick="invert_menu_status()"><img src="images/list_logo_1.png"></div>
+                    </div>
+                    <div id="header-section-mobile-links">
+                        <a href="">Home</a>
+                        <a href="#work-section">Recent work</a>
+                        <a href="#projects-section">Projects</a>
+                        <a href="#contact-section">Get in touch</a>
+                        <a href="mailto:jean.le.bris.etudes@gmail.com"><img src="images/mail_logo.png"><p>Send an e-mail</p></a>
+                        <a href="https://github.com/JeanLeBris" target="_blank"><img src="images/github_logo_2.png"><p>GitHub</p></a>
+                        <a href="https://www.linkedin.com/in/jean-le-bris" target="_blank"><img src="images/linkedin_logo.png"><p>LinkedIn</p></a>
                     </div>
                 </div>
                 <div id="header-presentation">
