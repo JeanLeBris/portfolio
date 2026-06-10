@@ -165,7 +165,6 @@ header {
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  opacity: 30%;
 }
 
 #header-section-mobile-base > a {
@@ -173,6 +172,7 @@ header {
   /* height: 24pt; */
   width: 70%;
   padding-left: 8%;
+  text-decoration: none;
 }
 
 #header-section-mobile-base > div {
@@ -181,13 +181,13 @@ header {
   width: 30%;
   padding-right: 8%;
   /* gap: 40pt; */
-  /* opacity: 30%; */
 }
 
 #header-section-mobile-base > div > img {
   margin-top: 10%;
   height: 60%;
   float: right;
+  opacity: 30%;
 }
 
 #header-section-mobile-links {
@@ -208,11 +208,12 @@ header {
   flex-wrap: nowrap;
   gap: 40pt;
   align-items: center;
-  opacity: 30%;
+  text-decoration: none;
 }
 
 #header-section-mobile-links > a > img {
   height: 70%;
+  opacity: 30%;
 }
 
 @media(max-width: 30cm){
