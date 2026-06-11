@@ -98,6 +98,7 @@ header {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    z-index: 1000;
   }
 }
 @media(min-width: 30cm){
@@ -192,10 +193,40 @@ header {
 
 #header-section-mobile-links {
   width: 100%;
-  display: none;
+  display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   background-color: var(--dark-grey);
+  position: relative;
+  left: 100%;
+}
+
+.opening {
+  animation: 0.25s ease-out slide-in;
+  animation-fill-mode: forwards;
+}
+
+.closing {
+  animation: 0.25s ease-in slide-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slide-out {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
 }
 
 #header-section-mobile-links > a {
@@ -372,6 +403,7 @@ header {
 #header-companies-list > a > img {
   height: 60%;
   opacity: 30%;
+  z-index: 1;
 }
 
 main {

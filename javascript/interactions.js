@@ -5,13 +5,12 @@ function invert_menu_status(){
     console.log("test")
 
     if(menu_opened){
-        menu.style = "display: none;"
-        menu_opened = !menu_opened
+        menu.className = "closing"
     }
     else{
-        menu.style = "display: flex;"
-        menu_opened = !menu_opened
+        menu.className = "opening"
     }
+    menu_opened = !menu_opened
 }
 
 // let menu_button = document.getElementById("header-section-mobile-base-button")
